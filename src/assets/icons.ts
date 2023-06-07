@@ -1,0 +1,11 @@
+export { default as IconHome } from 'assets/img/IconHome.svg';
+export { default as IconCalendar } from 'assets/img/IconCalendar.svg';
+export { default as IconExit } from 'assets/img/IconExit.svg';
+export { default as IconFinancial } from 'assets/img/IconFinancial.svg';
+export { default as IconMap } from 'assets/img/IconMap.svg';
+export { default as IconSearch } from 'assets/img/IconSearch.svg';
+export { default as IconSetting } from 'assets/img/IconSetting.svg';
+export { default as IconSettingPerson } from 'assets/img/IconSettingPerson.svg';
+export { default as IconTables } from 'assets/img/IconTables.svg';
+export { default as IconWidgets } from 'assets/img/IconWidgets.svg';
+export { default as IconTriangle } from 'assets/img/IconTriangle.svg';

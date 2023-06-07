@@ -1,0 +1,72 @@
+@import '../global_styling/colors.scss';
+
+.sidebar {
+  &::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $PURPLE;
+  }
+  min-width: 320px;
+  padding: 24px 24px 90px 32px;
+  background: $TRANSLUCENT_WHITE;
+  box-shadow: 0px 0px 4px $TRANSPARENT_DARK_BLUE;
+  overflow-y: auto;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $DARK_GREY;
+
+    margin-bottom: 32px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+  .menu-item {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: $DARK_GREY;
+    cursor: pointer;
+    .link {
+      text-decoration: none;
+      color: $DARK_GREY;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    img {
+      min-width: 32px;
+    }
+    .triangle {
+      min-width: 14px;
+      margin-left: auto;
+      transform: rotate(180deg);
+    }
+    .reverse {
+      transform: none;
+    }
+    &.dropdown {
+      ul {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-left: 10%;
+      }
+    }
+  }
+}

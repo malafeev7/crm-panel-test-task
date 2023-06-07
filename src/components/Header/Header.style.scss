@@ -1,0 +1,42 @@
+@import '../global_styling/colors.scss';
+
+.header {
+  height: 80px;
+  background: $PURPLE;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    cursor: pointer;
+    img {
+      width: 48px;
+      height: 48px;
+    }
+    p {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: $WHITE;
+    }
+  }
+  .person {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    img {
+      width: 48px;
+      height: 48px;
+    }
+    p {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: $WHITE;
+    }
+  }
+}

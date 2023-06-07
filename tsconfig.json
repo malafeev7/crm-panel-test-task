@@ -18,9 +18,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "rootDirs": ["src"],
+    "baseUrl": "./src",
+    "paths": {
+      "screens": ["./screens"]
+    },
   },
   "include": [
-    "src"
+    "src/"
   ]
 }

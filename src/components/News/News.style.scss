@@ -1,0 +1,41 @@
+@import '../global_styling/colors.scss';
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0px 32px 32px;
+  h3 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    color: $DARK_GREY;
+  }
+  h4 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $DARK_GREY;
+    margin-top: 16px;
+  }
+  .boxContent {
+    &::-webkit-scrollbar {
+      width: 4px;
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $PURPLE;
+    }
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $DARK_GREY;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 20px;
+  }
+}
